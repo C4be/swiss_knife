@@ -25,7 +25,7 @@ def extract_only_text_from_pdf(file_path: Union[str, Path]) -> str:
         postprocessed_text = join_full_sentences(postprocessed_text)
         postprocessed_text = separate_numbers_from_words(postprocessed_text)
         postprocessed_text = normalize_newlines(postprocessed_text)
-        text += f"""Page#{i + 1}\n\n{postprocessed_text}\n\n"""
+        text += f"""{postprocessed_text}\n######################\n"""
     return text
 
 
