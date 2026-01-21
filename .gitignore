@@ -1,2 +1,7 @@
 .DS_Strore
 .venv
+.pytest_cache/
+.vscode/
+env/
+sample.pdf
+__pycache__/
